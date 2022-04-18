@@ -479,7 +479,7 @@ class Blocks extends React.Component {
         this.setState(p);
     }
     handleConnectionModalStart (extensionId) {
-        let prgCustomExtensions = ['microbitRobot','teachableMachine'];
+        let prgCustomExtensions = ['microbitRobot','teachableMachine', 'tpbot'];
         if (!prgCustomExtensions.includes(extensionId)) {
             this.props.onOpenConnectionModal(extensionId);
         }
