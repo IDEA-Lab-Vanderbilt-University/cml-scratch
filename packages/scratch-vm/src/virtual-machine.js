@@ -31,7 +31,8 @@ const RESERVED_NAMES = ['_mouse_', '_stage_', '_edge_', '_myself_', '_random_'];
 const CORE_EXTENSIONS = [
     'microbitRobot',
     'teachableMachine',
-    'textClassification'
+    'textClassification',
+    'tpbot'
     // 'motion',
     // 'looks',
     // 'sound',

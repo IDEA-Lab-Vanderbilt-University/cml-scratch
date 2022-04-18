@@ -28,6 +28,7 @@ const builtinExtensions = {
     arduinoRobot: () => require('../extensions/scratch3_arduinobot'),
     gizmoRobot: () => require('../extensions/scratch3_gizmo'),
     microbitRobot: () => require('../extensions/scratch3_microbot'),
+    tpbot: () => require('../extensions/scratch3_tpbot'),
     teachableMachine: () => require('../extensions/scratch3_teachable_machine'),
     textClassification: () => require('../extensions/scratch3_text_classification')
 };
@@ -113,6 +114,7 @@ class ExtensionManager {
      * @returns {boolean} - true if loaded, false otherwise.
      */
     isExtensionLoaded (extensionID) {
+        console.log('isExtensionLoaded ' + extensionID);
         return this._loadedExtensions.has(extensionID);
     }
 
