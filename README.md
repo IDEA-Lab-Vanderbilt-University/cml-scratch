@@ -10,7 +10,7 @@ It is not so great for:
 
 - Pushing small changes back to upstream Scratch components often (it's possible, and this project retains the git history of the constituent sub-projects, but there's an extra messy step to get your work together for a pull request)
 
-It is structured as a monorepo, where the Scratch components you'll typically want to modify live within the repository so you can edit them all at once, manage their versions all in one place, and perform a simple static site deploy of the GUI with the synced dependencies.
+It is structured as a mono repo, where the Scratch components you'll typically want to modify live within the repository so you can edit them all at once, manage their versions all in one place, and perform a simple static site deployment of the GUI with the synced dependencies.
 
 - [packages/scratch-gui](packages/scratch-gui)
 - [packages/scratch-vm](packages/scratch-vm)
@@ -19,7 +19,7 @@ It is structured as a monorepo, where the Scratch components you'll typically wa
 
 ## ⚡ Quick Setup️
 
-Requirements, your java version should be 8 or higher. Check `java -version`.
+Requirements: Your Java version should be 8 or higher. Check `java -version`.
 
 ```shell script
 git clone git@github.com:mitmedialab/prg-extension-boilerplate.git
@@ -82,9 +82,9 @@ npx lerna import ../scratch-latest/scratch-blocks --preserve-commit --flatten
 
 ### Deployment
 
-We use GitHub Actions to build the combined scratch-gui using `npm`, and [actions-gh-pages](https://github.com/peaceiris/actions-gh-pages) to deploy to GitHub Pages.
+We use GitHub Actions to build the combined scratch-gui using `npm` and [actions-gh-pages](https://github.com/peaceiris/actions-gh-pages) to deploy to GitHub Pages.
 
-Note that there is a step of adding an access token to the repository due to a bug with GitHub Actions. [Follow the steps here](https://github.com/marketplace/actions/deploy-to-github-pages#configuration-) to add an access token to your repository.
+Note that there is a step to add an access token to the repository due to a bug with GitHub Actions. [Follow the steps here](https://github.com/marketplace/actions/deploy-to-github-pages#configuration-) to add an access token to your repository.
 
 ## 😸 Caveats
 
